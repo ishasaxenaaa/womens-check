@@ -1,0 +1,728 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body
+{
+    background-color: #f1f3f4;
+    font-family:sans-serif;
+}
+.logo{
+    height:40px;
+    width:70px;
+    margin:5px 10px;
+} 
+.top-nav-bar
+{
+    height:57px;
+    top:0;
+    position:sticky;
+    background:#f5de0d;   /* background:rgb(89, 24, 240); */
+    margin-bottom:20px;
+    border-bottom: 3px solid rgb(217, 255, 0);
+    z-index:2;
+}
+.form-control{
+    margin-top:9px;
+    margin-bottom:9px;
+    margin-left:20px;
+    border:1px solid  rgb(217, 255, 0) !important;
+    border-top-left-radius:20px !important;
+    border-bottom-left-radius:20px !important;
+    border-top-right-radius:0 !important;
+    border-bottom-right-radius:0 !important;
+    box-shadow:none;
+}  
+.input-group-text{
+    background:black !important;
+    color:white !important;
+    border:1px solid rgb(115, 255, 0);
+    margin:8.5px 10px 3px 0;
+    border-top-left-radius:0px !important;
+    border-bottom-left-radius:0px !important;
+    border-top-right-radius:20px !important;
+    border-bottom-right-radius:20px !important;
+    cursor:pointer;
+}
+.search-box
+{
+    display: inline-flex;
+    width:60%;
+    height:3rem;
+    color:rgb(197, 37, 77);
+}
+.menu-bar{
+    height: 57px;
+    width:40%;
+    float:right;
+    
+}
+.menu-bar ul{
+display:inline-flex;
+float: right;
+}
+.menu-bar ul li{
+    border-left:1px solid #fff;
+    list-style-type:none;
+    padding:15px 35px;
+    text-align:center;
+    background-color:black;
+    cursor:pointer;
+    
+    
+}
+.menu-bar ul li a{
+    font-size:16px;
+    text-decoration:none;
+    color:#fff;
+}
+.fa-shopping-basket,.fa-user-plus,.fa-sign-in{
+    margin-right:5px;
+}
+#firstname{
+    border-top-right-radius: 3rem !important;
+    border-bottom-right-radius: 3rem !important;
+
+}
+@media only screen and (max-width:980px)
+{
+    .top-nav-bar{
+        height:118px;
+        border-bottom:0;
+    }
+    .search-box{
+        width:100%;
+    }
+    .menu-bar{
+        width:100%;
+    }
+    .menu-bar ul{
+        margin:10px 0;
+        width:100%;
+    }
+    .menu-bar ul li{
+        height:57px;
+        width:100%;
+
+    }
+}
+ .side-menu{
+     height:39em;
+    width:15%;
+    font-size:14px;
+    float:left;
+    z-index:2;
+    background:lightgray;
+    
+}
+
+.side-menu ul{
+    margin-left:10px;
+  }
+.side-menu ul li{
+    list-style-type:none;
+    font-weight:bold;
+    margin-top:10px;
+    cursor:pointer;
+}
+.side-menu ul li:hover{
+    color:black;
+    font-size:18px;
+    transition:0.5s;
+}
+.side-menu ul li ul{
+    display:none;
+    z-index:10;
+    top:100px;
+}
+
+ .side-menu ul li:hover ul{
+    display:block;
+    height:400px;
+    margin-left:14%;
+    padding:0 100px 10px 10px;
+    position: fixed;
+    background:#ececec;
+    box-shadow:1px 1px 4px 1px rgba(0,0,0,0.5);
+} 
+.fa-angle-right{
+    margin-top:4px;
+    margin-right:8px;
+    float:right;
+}
+#menu-btn,#close-btn{
+    font-size:30px;
+    margin:10px;
+    color:black;
+    display: none;
+}
+@media only screen and (max-width:980px)
+{
+    .side-menu{
+        width:34%;
+        z-index:20;
+        top:133px;
+        position:fixed;  
+        font-size:12px;
+        background:#f1f3f4;
+        display:none;
+     }
+     .side-menu ul li 
+     {
+         top:133px;
+     }
+     .side-menu ul li:hover{
+        color:black;
+        font-size:13.5px;
+        transition:0.5s;
+    }
+     .side-menu ul li ul{
+         top:133px;
+     }
+     .side-menu ul li:hover ul{
+         margin-left:31%;
+     }
+     #menu-btn{
+         display:block;
+     }
+     .slider
+     {
+         width:100vw;
+         margin:0rem;
+     }
+}
+.slider{
+    width:85%;
+    margin-left:15%;
+    padding:0px 10px;
+}
+.carousel
+{
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.5);
+}
+ .carousel-indicators{
+     
+    z-index:1 !important;
+
+} 
+.carousel-control-next{
+    z-index:1 !important;
+}
+.carousel-control-prev
+{
+    z-index:1 !important;
+} 
+@media only screen and (max-width:980px)
+{
+    .slider{
+        width:100%;
+        margin-left:0rem;
+    }
+}
+
+
+.featured-categories
+{ text-align: center;
+margin-top:50px;
+
+}
+.featured-categories p b
+{
+font-size:30px;
+    color:black;
+    text-align:center;
+}
+.featured-categories p
+{
+  
+    color:darkgrey;
+    font-size:21px;
+    margin-top:0rem;
+    
+}
+.featured-categories img
+{
+    width:100%;
+    padding:20px 0px; 
+    transition:1s;
+    cursor:pointer;
+}
+.featured-categories img:hover
+{
+transform:scale(1.1);
+}
+.title-box{
+    background:#f5de0d;
+    color:black;
+    width:180px;
+    padding:4px 10px;
+    height:40px;
+     margin-bottom:37px;
+     margin-top:25px;
+     display:flex;
+}
+.title-box h2
+{
+    font-size:24px;
+}
+.title-box::after
+{
+    content:'';
+    height:4px;
+    border-top:40px solid #f5de0d;
+    border-right:50px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-4px;
+    margin-left:170px;
+
+}
+/*----------product-top CSS-------*/
+.product-top:img
+{
+width:100%;
+cursor:pointer;
+}
+.overlay-right{
+    display:block;
+    opacity:0;
+    position:absolute;
+    top:10%;
+    margin-left:0px;
+    width:70px;
+}
+
+.overlay-right .fa
+{
+    cursor:pointer;
+    background-color:#fff;
+    color:#000;
+    height:35px;
+    width:35px;
+    font-size:20px;
+    padding:7px;
+    margin-top:5%;
+    margin-bottom:5%;
+    transition:0.5s;
+}
+.overlay-right .btn-secondary
+{
+    background:none !important;
+    border:none !important;
+    box-shadow:none !important;
+
+}
+
+.product-top:hover .overlay-right{
+    opacity:1;
+    margin-left:5%;
+    transition:0.5s;
+}
+/*--------PRODUCT BOTTOM CSS---------*/
+.product-top:hover .overlay-right{
+    opacity:1;
+    margin-left:5%;
+    transition:0.5s;
+}
+/*--------PRODUCT BOTTOM CSS---------*/
+.product-bottom .fa
+{
+    color:black;
+    font-size:10px;
+
+}
+.product-bottom h3
+{
+    font-size:20px;
+    font-weight:bold;
+
+}
+.product-bottom h5
+{
+    font-size:15px;
+    padding-bottom:10px;
+    
+}
+
+@media only screen and (max-width:980px)
+{
+    .featured-categories
+{ text-align: center;
+    margin:5px 5px;
+    align-items: center;
+}
+.featured-categories img
+{
+    width:100%;
+    padding:10px 0px;
+    transition:1s;
+    cursor:pointer;
+}
+.featured-categories img:hover
+{
+transform:scale(1.1);
+}
+.title-box{
+    background:#f5de0d;
+    color:black;
+    width:230px;
+    padding:4px 60px;
+    height:40px;
+    margin-bottom:18px;
+    
+display:flex;
+}
+.title-box h2
+{
+    font-size:24px;
+}
+.title-box::after
+{
+    content:'';
+    height:4px;
+    border-top:40px solid #f5de0d;
+    border-right:50px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-4px;
+    margin-left:170px;
+
+}
+/*----------product-top CSS-------*/
+
+ .responsive
+{
+    
+    width:80%;
+  
+} 
+
+.overlay-right{
+    display:block;
+    opacity:0;
+    position:absolute;
+    top:10%;
+    margin-left:0;
+    width:70px;
+}
+
+.overlay-right .fa
+{
+    cursor:pointer;
+    background-color:#fff;
+    color:#000;
+    height:35px;
+    width:35px;
+    font-size:20px;
+    padding:7px;
+    margin-top:5%;
+    margin-bottom:5%;
+    transition:0.5s;
+}
+.overlay-right .btn-secondary
+{
+    background:none !important;
+    border:none !important;
+    box-shadow:none !important;
+
+}
+.product-top:hover .overlay-right{
+    opacity:1;
+    margin-left:5%;
+    transition:0.5s;
+}
+/*--------PRODUCT BOTTOM CSS---------*/
+.product-bottom
+{
+    margin-left:-2.3rem;
+}
+.product-bottom .fa
+{
+    color:black;
+    font-size:10px;
+
+}
+.product-bottom h3
+{
+    font-size:20px;
+    font-weight:bold;
+   
+
+}
+.product-bottom h5
+{
+    font-size:15px;
+    padding-bottom:10px;
+
+
+} 
+.featured-categories p 
+{
+    font-size:25px;
+}
+}
+
+.shoppers-stop img{
+   
+   width:71.5rem;
+   height:32rem;
+}
+
+/* customised title box of dress to impress*/
+.title-box2{
+    background:#f5de0d;
+    color:black;
+    width:200px;
+    padding:4px 10px;
+    height:40px;
+     margin-bottom:37px;
+     margin-top:25px;
+
+    
+    display:flex;
+}
+.title-box2 h2
+{
+    font-size:24px;
+}
+.title-box2::after
+{
+    content:'';
+    height:4px;
+    border-top:40px solid #f5de0d;
+    border-right:50px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-4px;
+    margin-left:190px;
+
+}
+/*new arrivals*/
+.new-arrivals p
+{
+    text-align: center;
+    margin-bottom:15px;
+    color:darkgray;
+    font-size:21px;
+}
+.new-arrivals p b
+{
+    text-align: center;
+  font-size:30px;
+  color:black;
+  
+}
+
+@media only screen and (max-width:980px)
+{ .shoppers-stop img 
+   
+    {
+       width:41.3rem;
+       height:16rem;
+    }
+    /* customised title box of dress to impress*/
+    .title-box2{
+        background:#f5de0d;
+        color:black;
+        width:200px;
+        padding:4px 10px;
+        height:40px;
+         margin-bottom:24px;
+         margin-top:25px;
+    
+        
+        display:flex;
+    }
+    .title-box2 h2
+    {
+        font-size:24px;
+    }
+    .title-box2::after
+    {
+        content:'';
+        height:4px;
+        border-top:40px solid #f5de0d;
+        border-right:50px solid transparent;
+        position:absolute;
+        display:flex;
+        margin-top:-4px;
+        margin-left:190px;
+    
+    }
+    /*new arrivals*/
+    .new-arrivals p
+    {
+        text-align: center;
+        margin-bottom:25px;
+        color:darkgray;
+        font-size:15px;
+    }
+    .new-arrivals p b
+    {
+        text-align: center;
+      font-size:30px;
+      color:black;
+      
+    }
+
+
+}
+/*WOMENS SECTION CSS*/
+
+.ethnics
+{
+    text-align: center;
+
+
+}
+.ethnics img
+{
+    width:90%;
+     padding:20px 0px; 
+    transition:1s;
+    cursor:pointer;
+
+}
+.ethnics img:hover
+{
+transform:scale(1.1);
+}
+.shopby
+{
+    margin:30px 5px;
+
+}
+.shopby img
+{
+    width:65%;
+
+}
+
+
+
+.shop-by-text
+{
+    text-transform:capitalize;
+    
+    text-align:center;
+}
+.products-top img
+{
+    
+    width:70%;
+    cursor: pointer;
+} 
+
+/*--------PRODUCT BOTTOM CSS---------*/
+/*tops and tees*/
+.on-sale2
+{
+    margin-left:4.5rem;
+}
+.final-touch p b
+{
+    text-align: center;
+  font-size:30px;
+  color:black;
+  
+}
+.final-touch p
+{
+    text-align: center;
+    margin-bottom:15px;
+    color:darkgray;
+    font-size:20px;
+}
+.website-features
+{
+    margin:60px 0px;
+}
+.website-features img
+{
+    width:20%;
+}
+.feature-text
+{
+    margin-top:10px;
+    float:right;
+    width:80%;
+    padding-left:20px;
+}
+.feature-box
+{
+    padding-top:20px;
+}
+.footer
+{
+    margin-top:50px;
+    background-color:#000;
+    color:#fff;
+}
+.footer h1
+{
+    font-size:23px;
+    margin:25px 0px;
+}
+.footer p
+{
+    font-size:20px;
+}
+.copyright
+{
+    margin-bottom:-80px;
+    text-align:center;
+    font-size:15px;
+    padding-bottom:20px;
+}
+.fa-heart-o
+{
+    color:yellow;
+    font-size:15px;
+}
+.footer hr
+{
+    margin-top:10px;
+    background-color:#ccc;
+}
+.footer-image img
+{
+    width:150px;
+}
+.footer .row .fa
+{
+    padding:3px;
+    font-size:15px;
+}
+@media only screen and (max-width:980px)
+{
+    .final-touch p
+    {
+        text-align: center;
+        margin-bottom:25px;
+        color:darkgray;
+        font-size:15px;
+    }
+    .footer h1 
+    {
+        font-size:22px;
+        margin:25px 0px;
+
+    }
+    .footer p
+{
+    font-size:20px;
+}
+.copyright
+{
+    margin-bottom:-80px;
+    text-align:center;
+    font-size:20px;
+    padding-bottom:20px;
+}
+.fa-heart-o
+{
+    color:yellow;
+    font-size:21px;
+}
+}

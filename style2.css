@@ -1,0 +1,448 @@
+*{
+    margin-left:0rem;
+    margin-right:0rem;
+    padding:0;
+    
+}
+body
+{
+    background-color: #f1f3f4;
+    font-family:sans-serif;
+}
+.logo{
+    height:40px;
+    margin:8px 10px;
+} 
+.top-nav-bar
+{
+    height:57px;
+    top:0;
+    position:sticky;
+    background:#f5de0d;   /* background:rgb(89, 24, 240); */
+    margin-bottom:20px;
+    border-bottom: 3px solid rgb(217, 255, 0);
+    z-index:2;
+}
+.form-control{
+    margin-top:9px;
+    margin-bottom:9px;
+    margin-left:20px;
+    border:1px solid  rgb(217, 255, 0) !important;
+    border-top-left-radius:20px !important;
+    border-bottom-left-radius:20px !important;
+    border-top-right-radius:0 !important;
+    border-bottom-right-radius:0 !important;
+    box-shadow:none;
+}  
+.input-group-text{
+    background:black !important;
+    color:white !important;
+    border:1px solid rgb(115, 255, 0);
+    margin:8.5px 10px 3px 0;
+    border-top-left-radius:0px !important;
+    border-bottom-left-radius:0px !important;
+    border-top-right-radius:20px !important;
+    border-bottom-right-radius:20px !important;
+    cursor:pointer;
+}
+.search-box
+{
+    display: inline-flex;
+    width:60%;
+    height:3rem;
+    color:rgb(197, 37, 77);
+}
+.menu-bar{
+    height: 57px;
+    width:40%;
+    float:right;
+}
+.menu-bar ul{
+display:inline-flex;
+float: right;
+}
+.menu-bar ul li{
+    border-left:1px solid #fff;
+    list-style-type:none;
+    padding:15px 35px;
+    text-align:center;
+    background-color:black;
+    cursor:pointer;
+    
+    
+}
+.menu-bar ul li a{
+    font-size:16px;
+    text-decoration:none;
+    color:#fff;
+}
+.fa-shopping-basket{
+    margin-right:5px;
+}
+#firstname{
+    border-top-right-radius: 3rem !important;
+    border-bottom-right-radius: 3rem !important;
+
+}
+@media only screen and (max-width:980px)
+{
+    .top-nav-bar{
+        height:118px;
+        border-bottom:0;
+    }
+    .search-box{
+        width:100%;
+    }
+    .menu-bar{
+        width:100%;
+    }
+    .menu-bar ul{
+        margin:10px 0;
+        width:100%;
+    }
+    .menu-bar ul li{
+        height:57px;
+        width:100%;
+
+    }
+}
+ .side-menu{
+     height:39em;
+    width:15%;
+    font-size:14px;
+    float:left;
+    z-index:2;
+    background:lightgray;
+    
+}
+
+.side-menu ul{
+    margin-left:10px;
+  }
+.side-menu ul li{
+    list-style-type:none;
+    font-weight:bold;
+    margin-top:10px;
+    cursor:pointer;
+}
+.side-menu ul li:hover{
+    color:black;
+    font-size:18px;
+    transition:0.5s;
+}
+.side-menu ul li ul{
+    display:none;
+    z-index:10;
+    top:77px;
+}
+
+ .side-menu ul li:hover ul{
+    display:block;
+    height:400px;
+    margin-left:14%;
+    padding:0 100px 10px 10px;
+    position: fixed;
+    background:#ececec;
+    box-shadow:1px 1px 4px 1px rgba(0,0,0,0.5);
+} 
+.fa-angle-right{
+    margin-top:4px;
+    margin-right:8px;
+    float:right;
+}
+#menu-btn,#close-btn{
+    font-size:30px;
+    margin:10px;
+    color:orange;
+    display: none;
+}
+@media only screen and (max-width:980px)
+{
+    .side-menu{
+        width:34%;
+        z-index:20;
+        top:133px;
+        position:fixed;  /*agr ye na kren toh slider neeche khiskta h side menu pr click krne me  */
+        font-size:12px;
+        background:#f1f3f4;
+        display:none;
+     }
+     .side-menu ul li:hover{
+        color:black;
+        font-size:13.5px;
+        transition:0.5s;
+    }
+     .side-menu ul li ul{
+         top:133px;
+     }
+     .side-menu ul li:hover ul{
+         margin-left:31%;
+     }
+     #menu-btn{
+         display:block;
+     }
+}
+
+/* slider k neeche wali images ki css*/
+
+
+/*----------product-top CSS-------*/
+.product-top:img
+{
+width:100%;
+}
+.overlay-right{
+    display:block;
+    opacity:0;
+    position:absolute;
+    top:10%;
+    margin-left:0;
+    width:70px;
+}
+
+.overlay-right .fa
+{
+    cursor:pointer;
+    background-color:#fff;
+    color:#000;
+    height:35px;
+    width:35px;
+    font-size:20px;
+    padding:7px;
+    margin-top:5%;
+    margin-bottom:5%;
+    transition:0.5s;
+}
+.overlay-right .btn-secondary
+{
+    background:none !important;
+    border:none !important;
+    box-shadow:none !important;
+
+}
+.product-top:hover .overlay-right{
+    opacity:1;
+    margin-left:5%;
+    transition:0.5s;
+}
+/*--------PRODUCT BOTTOM CSS---------*/
+.product-bottom
+{
+    margin-left: -2.5rem;
+}
+.product-bottom .fa
+{
+    color:red;
+    width:3%;
+    font-size:10px;
+
+    
+
+}
+.product-bottom h3
+{
+    font-size:20px;
+    font-weight:bold;
+   
+}
+.product-bottom h5
+{
+    font-size:15px;
+    padding-bottom:10px;
+    
+}
+.title-box{
+    box-sizing: border-box;
+    background:#f5de0d;
+    color:black;
+    width:180px;
+    padding:4px 10px;
+    height:40px;
+     /* margin-bottom:37px;
+     margin-top:25px; */
+     margin-top:1rem;
+     margin-bottom:2.2rem;
+     display:flex;
+}
+.title-box h2
+{
+    font-size:24px;
+}
+.title-box::after
+{
+    content:'';
+    height:4px;
+    border-top:40px solid #f5de0d;
+    border-right:50px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-4px;
+    margin-left:170px;
+
+}
+@media only screen and (max-width:980px)
+{
+
+.title-box{
+    background:#f5de0d;
+    color:black;
+    width:230px;
+    padding:4px 60px;
+    height:40px;
+    margin-bottom:18px;
+    
+display:flex;
+}
+.title-box h2
+{
+    font-size:24px;
+}
+.title-box::after
+{
+    content:'';
+    height:4px;
+    border-top:40px solid #f5de0d;
+    border-right:50px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-4px;
+    margin-left:170px;
+
+}
+/*----------product-top CSS-------*/
+/* .product-top:img
+{
+width:100%;
+
+} */
+ .responsive
+{
+width:80%;
+} 
+
+.overlay-right{
+    display:block;
+    opacity:0;
+    position:absolute;
+    top:10%;
+    margin-left:0;
+    width:70px;
+}
+
+.overlay-right .fa
+{
+    cursor:pointer;
+    background-color:#fff;
+    color:black;
+    height:35px;
+    width:35px;
+    font-size:20px;
+    padding:7px;
+    margin-top:5%;
+    margin-bottom:5%;
+    transition:0.5s;
+}
+.overlay-right .btn-secondary
+{
+    background:none !important;
+    border:none !important;
+    box-shadow:none !important;
+
+}
+.product-top:hover .overlay-right{
+    opacity:1;
+    margin-left:5%;
+    transition:0.5s;
+}
+/*--------PRODUCT BOTTOM CSS---------*/
+
+.product-bottom .fa
+{
+    color:black;
+    font-size:10px;
+}
+.product-bottom h3
+{
+    font-size:5px;
+    font-weight:bold;
+}
+.product-bottom h5
+{
+    font-size:15px;
+    padding-bottom:1rem;
+} 
+}
+/*mob css end*/
+
+.title-box2{
+    background:#f5de0d;
+    color:black;
+    width:200px;
+    padding:4px 10px;
+    height:40px;
+     margin-bottom:37px;
+     margin-top:25px;
+     display:flex;
+}
+.title-box2 h2
+{
+    font-size:24px;
+}
+.title-box2::after
+{
+    content:'';
+    height:4px;
+    border-top:40px solid #f5de0d;
+    border-right:50px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-4px;
+    margin-left:190px;
+
+}
+/*
+/*WOMENS SECTION CSS*/
+
+.ethnics
+{
+display:none;
+}
+.products-top img
+{   
+    width:70%;
+    cursor: pointer;
+} 
+
+/*--------PRODUCT BOTTOM CSS---------*/
+/*tops and tees*/
+.on-sale2
+{
+    margin-left:10.5rem;
+}
+.responsive
+{
+    width:90%;
+}
+.btnn{
+    padding:6px 7rem;
+    border:1px solid rgb(80, 26, 26);
+     background-color:#feb300; 
+    color:black;
+    display: block;
+    margin: auto;
+    top:-10rem;
+    margin-bottom:20px;
+    font-size: 1.2rem;
+    border-radius:10px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+.h-secondary{
+    text-align: center;
+ 
+    font-size:1.1rem;
+    padding:1px;
+    font-weight:bold;
+    width:100%;
+}
